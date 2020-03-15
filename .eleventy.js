@@ -1,5 +1,5 @@
 module.exports = eleventyConfig => {
-  eleventyConfig.addPairedShortcode("postcss", require("./utils/transform-css"));
+  eleventyConfig.addFilter("postcss", require("./utils/transform-css"));
 
   return {
     dir: {

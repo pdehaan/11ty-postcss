@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <style>
-    {%- postcss -%}
-      {% include entry.css %}
-    {%- endpostcss -%}
+    {% capture css %}{% include entry.css %}{% endcapture %}
+    {{ css postcss }}
   </style>
   <title>{{ title }}</title>
 </head>
