@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <style>
     {% capture css %}{% include entry.css %}{% endcapture %}
-    {{ css postcss }}
+    {{ css | postcss }}
   </style>
   <title>{{ title }}</title>
 </head>
