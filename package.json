@@ -1,0 +1,38 @@
+{
+  "name": "11ty-postcss",
+  "description": "Playing with Eleventy and postcss",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-postcss/issues"
+  },
+  "dependencies": {
+    "postcss-custom-selector": "^1.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
+    "postcss-custom-selectors": "^5.1.2",
+    "postcss-import": "^12.0.1",
+    "precss": "^4.0.0"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-postcss#readme",
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "postcss"
+  ],
+  "license": "MPL-2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-postcss.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "format:output": "npx prettier 'www/**/*.html' --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
